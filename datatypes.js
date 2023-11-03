@@ -54,6 +54,13 @@ console.log(d);
 
 
 
-//array
-let name = ""
+//array = is used to store multipal items
+let name = "pooja live in mumbai,mumbai is big city"
+console.log(name);
+
+let cities = [];//empty array
+
+cities = ["pune","mumbai","nashik","satara","kolhapur"]; 
+console.log(cities);
+
 
