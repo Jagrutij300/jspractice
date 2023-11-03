@@ -60,8 +60,8 @@ console.log(name);
 
 let cities = [];//empty array
 
-cities = ["pune","mumbai","nashik","satara","kolhapur"]; //homogenous array
-console.log(cities);
+//homogenous array
+cities = ["pune","mumbai","nashik","satara","kolhapur"]; 
 console.log(typeof(cities)); //array data type is always object
 console.log(cities[1]); // mumbai
 console.log(cities[7]); //undefined bcz no number is present in our cities list
@@ -69,4 +69,11 @@ console.log(cities.length);
 console.log(cities[0]);//array first value to determined type 0
 console.log(cities[cities.length -1]);//array last index item -1 we get last cities from list
 
-let hetroarray = ['poonam', 505000,test(),true,null,undefined,'pooja'] //hetroarray
+//hetrogeneous array
+let hetroarray = ['poonam', 505000,test(),true,null,undefined,'pooja'] 
+console.log(hetroarray[2]);
+
+function name(params) {
+    
+}
+    
