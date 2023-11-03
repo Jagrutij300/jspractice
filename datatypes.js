@@ -67,7 +67,7 @@ console.log(cities[1]); // mumbai
 console.log(cities[7]); //undefined bcz no number is present in our cities list
 console.log(cities.length);
 console.log(cities[0]);//array first value to determined type 0
-console.log(cities[cities.length -1]);//array last index item -1we get last cities from list
+console.log(cities[cities.length -1]);//array last index item -1 we get last cities from list kolaphut
 
 
 
