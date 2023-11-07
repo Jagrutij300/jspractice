@@ -20,8 +20,10 @@ console.log(!isfav); //false
 
 let e = 40;
 let f = 50;
-// > grater than
+// > grater than ,<less than only cheak value
 console.log('>',a > f); //false
 console.log('<' a < f); //true
+
+console.log('<=', e <= f);//less than equal to  true
 
 
