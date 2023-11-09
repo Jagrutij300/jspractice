@@ -26,4 +26,17 @@ console.log('<' a < f); //true
 
 console.log('<=', e <= f);//less than equal to  true
 
+//&& left hand side true & right hand true we get true
+// left hand side true & right hand side false we get false
+
+console.log(e < f && f > e ); //true
+
+console.log(e < f && f = e ); //false
+
+// logical or 
+// || OR F || F -----F else T
+
+console.log(e < f || f = e ); //true
+
+
 
