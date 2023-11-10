@@ -1,8 +1,16 @@
 //if condition,  syntex for if condition if(){code block}
-//if else,
+//if else, syntex for if else if(condition){code block}else{}
 //else if, 
 //switch
+// items greater than orequl to 50 
+let items = 40;
 
-let items = 60;
+if(items > 50){console.log("stock available");}
 
-if(items > 50){console.log("stock avaliable");}
+//if else
+if(items >= 50){
+    console.log("stock is available");
+}
+else{console.log("limited stock available");}
+
+
