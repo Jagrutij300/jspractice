@@ -15,17 +15,48 @@ else{console.log("limited stock available");}
 
 //else if multipal conditions
 if(items >=50){
-    console.log("stock avaliable");
+    document.write("stock avaliable");
 
 }
-else if(items >= 20)
+else if(items >= 20 && <=50)
 {
-    console.log("few items left");
+    document.write("few items left");
 } 
     
-else if(items >= 1){
-    console.log("hurry up few stock avaliable");
+else if(items >= 1 && <=20){
+    document.write("hurry up few stock avaliable");
 } 
 else{
-    console.log("out of stock");}
+    document.write("out of stock");}
 
+
+   //switch//
+   let marks = 40;
+
+   switch (marks) {
+    case marks >35 && <= 50:
+        document.write('pass');
+         break;
+         
+    case marks >50 && <= 60:
+        document.write('second class');
+         break;
+    case marks >60 && <= 75:
+            document.write('first class');
+             break;
+    case marks > 75:
+        document.write('Distinction');
+         break;
+         default
+         document.write('fail');
+         break;;
+
+
+
+
+
+   
+       
+    default:
+        break;
+   }
