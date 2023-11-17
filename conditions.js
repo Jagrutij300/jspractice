@@ -23,7 +23,7 @@ else if(items >= 20 && <=50)
     document.write("few items left");
 } 
     
-else if(items >= 1 && <=20){
+else if(items >= 1 && <= 20){
     document.write("hurry up few stock avaliable");
 } 
 else{
