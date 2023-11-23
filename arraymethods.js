@@ -45,5 +45,20 @@ console.log(cl4);
 //delete operator
 const fruits = ['bannana','orange','apple','mango'];
 delete fruits[1];
+//delete fruits[10]; show as it is fruits name 
 console.log(fruits);
-console.log(fruits.length);// length after deleting element same
+console.log(fruits.length);// length after deleting element same one drawback undefined hole show
+
+//splice (1^st index(where u want to adda item), 2^nd count(how many item u want to delete, 3rd and upto n (value added)))
+const fruit1 = ['banana','orange','apple','mango'];
+// fruit1.splice(1,0,'kiwi'); //we add 1 index orange position kiwi and orange shift to the next position
+fruit1.splice(1,2,'kiwi');//two item remove
+console.log(fruit1);
+
+//slice
+const fruit2 = ['banana','orange','apple','mango'];
+let a = fruit2.slice(2,4);//'orange','apple' 1st inclusive 4 exclusive
+console.log(a);
+console.log(fruit2);//main array not change after slice apply
+
+
