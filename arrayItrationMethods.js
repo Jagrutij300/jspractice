@@ -40,9 +40,7 @@ for(let i = 1 ; i <= 50 ; i++){
 const item =  [1,2,3,4,5,6,7,8,9,10];
 item.forEach(ele=>{
     if(ele >=3 && ele <= 9){
-        Document.write(ele,'<br>');
-    }
-})
+        console.log(ele,'<br>');}})
 item.push(44)
 document.write(item)
 
@@ -85,8 +83,45 @@ console.log(names);
 let nameObj = emp.map(({empName})=>({empName})) 
 console.log(nameObj);
 
-//filter methode
-// let char = [50,60,70,80,50,60,70,80,50];
-// let ind = char.filter((char,index) =>{if(item==50){return index;}})
-// console.log(ind);
+// here we find repeated 20 number for index value
+const array = [10,20,30,20,50,20,70,80,20];
+const searchElement = 20;
+let foundIndex=[];
 
+array.forEach((element,index) => {
+    if(element === searchElement){
+        foundIndex.push(index);
+    }
+});
+console.log(foundIndex);
+
+
+//includes()  == to cheak given value included in array id find then give true othewise not found false
+const array1 = [10,20,30,20,50,20,70,80,20];
+console.log(array1.includes(40));
+
+//duplicate item remove  [... (these is pread operator)]
+// Q remove duplicate item from these array
+// 1. New Set simple methods
+let char = ['a','b','c','a','b','a','a'];
+let char2= [...new Set(char)];
+console.log(char2);
+
+//duplicate item remove by logical methods
+//filter()
+let data = char.filter((item,index) => {
+    if(char.indexOf(item) === index){
+        return item
+    }
+})
+console.log(data);
+
+//using includes()
+let uniqueEle = [];
+char.forEach((ele,i)=>{
+    if(!uniqueEle.includes(ele))
+    {
+        uniqueEle.push(ele)
+    }
+})
+console.log(uniqueEle);
