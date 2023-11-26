@@ -62,3 +62,34 @@ r = 67;
 // y = 90;
 
 const y = 90;
+
+//function: parameterrised,parameterless
+//function used to implement logic in code block
+//logic
+ 
+//parameterless
+function multiplication(paranthesis){
+    //code block
+    console.log('parameterless fun');
+    let a =20;
+    let b =30;
+    res = a * b;
+    console.log('res', res);
+}
+
+//parameterised/argument 
+function division(a,b){
+    res = a / b;
+    console.log('parameterised fun',res);
+
+}
+
+
+
+
+
+
+
+
+
+    
