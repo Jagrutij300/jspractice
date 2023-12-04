@@ -17,4 +17,9 @@ export class DatabindingComponent {
 
 
   data : any = "we are learning string interpolation";
+  amount : number = 89832473;
+  // schoolName! : string ;
+  test(){
+    return 50;
+  }
 }
