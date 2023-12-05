@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 export class DirectivesComponent {
   // componenet directive is used in main class. they contain how the component should be processed instantiated and used in a run time.
 
+  city = 'pune';
+  isShow = true;
 }
