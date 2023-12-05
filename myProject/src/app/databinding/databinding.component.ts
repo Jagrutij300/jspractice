@@ -17,9 +17,19 @@ export class DatabindingComponent {
 
 
   data : any = "we are learning string interpolation";
-  amount : number = 89832473;
-  // schoolName! : string ;
+  amount : number = 900000;
+  schoolName! : string ;
+// x=7;
+ClickEventData:any;
+name = "jagruti...";
+city:any ="satara";
+
+
+  isMatch =true;
   test(){
     return 50;
+  }
+  ClickEvent(){
+  this.ClickEventData = 989898;
   }
 }

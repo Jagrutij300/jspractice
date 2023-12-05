@@ -6,3 +6,35 @@
 <!-- <div>{{schoolName = 'Holy Cross School'}}</div> -->
 
 <!-- we can used equality operator with interpolation -->
+<!-- <div>{{amount == 19000}}</div>   overlaping of num and string data type error-->
+<!-- == equality operator cheak data not a data type -->
+<!-- <div>{{amount === 20000}}</div>
+=== equality operator cheak data and data type also --> 
+<div>{{amount === 20000}}</div> <!--false bcz error ts file have number valkue differance and here value differance-->
+
+
+<!-- we can write here expression also -->
+<div>{{30*2}}</div> 
+<div>{{amount*2}}</div> <!--expression allowed-->
+
+<p>{{!isMatch}}</p> <!--not allowed-->
+
+<!-- <p>{{x++}}</p> increament decrement not allowed in interpolation
+ -->
+
+
+ <!-- property binding -->
+<input type="text" [value]="name">Enter Name
+
+
+<!-- event binding -->
+<button (click)="ClickEvent()">Click Event</button>
+<br>
+{{ClickEventData}}
+<br>
+
+
+<!--two way databinding-->
+<input type = "text" [(ngModel)] = "city">Enter City
+<br>
+Entered City = {{city}}
