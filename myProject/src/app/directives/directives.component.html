@@ -12,3 +12,37 @@
 <div class = "div-Container" *ngif = 'showDiv'></div>
 <br>
 <button (click) = "toggle()">toggle</button>
+
+<!-- *ngswitch -->
+<div [ngSwitch]="fruits">
+    <div *ngSwitchCase="'mango'">my fav fruit is mango</div>
+    <div *ngSwitchCase="'pinapple'">my fav fruit is pinapple</div>
+    <div *ngSwitchCase="'papapya'">my fav fruit is papapya</div>
+    
+</div> 
+
+<!-- *ngClass -->
+<div class = 'info adminUser'>
+    i like pune
+</div>
+
+<!-- <div [ngClass] = "{'adminUser' : user == 'Admin','mentorUser' : user == 'Mentor','studentUser : user == 'student' }" > -->
+  <!-- welcome to app -->
+<!-- </div>> --> 
+
+<div [class.adminUser]="user == 'Admin'"
+    [class.mentorUser]="user == 'Mentor'"
+    [class.studentUser]="user == 'Student'"
+>
+    Welcome
+</div>
+
+<!-- ngStyle -->
+<div style="color: blueviolet" >
+    Welcome
+</div>
+
+<div [ngStyle] = "user =='Admin' ? {'background-color':'yellow'} : {'background-color': 'black'}">
+    Welcome
+
+</div>
