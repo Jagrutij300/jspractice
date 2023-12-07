@@ -36,6 +36,9 @@ export class HomeComponent { // componenet class : property ,constructor, life c
      directives(){
       this.router.navigateByUrl('directives')
      }
-     
+     LifeCyclehooksComponent(){
+      this.router.navigateByUrl('LifeCyclehooksComponent')
+     }
+    
 
 }
