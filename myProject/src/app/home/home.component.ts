@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router'; //import section
+import { DataService } from '../data.service';
 
 @Component({ //componenet directive : meta data of component
   selector: 'app-home',
@@ -15,9 +16,12 @@ export class HomeComponent { // componenet class : property ,constructor, life c
       Name2! : string; //only declare
       Name3 : any; // any not need to ! declare
 
+  
 
-
-  constructor(private router: Router){} // constructor section
+  constructor(private router: Router, private dataService : DataService){} // constructor section
+  ngOnInit(){
+     this.dataService.userName = this.Name;
+  }
 
   //life cycle hook , Methods
   SignUpCompo(){

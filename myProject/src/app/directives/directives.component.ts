@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-directives',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
 })
 export class DirectivesComponent {
   // user:string="Admin";
+
+
+  constructor(private dataservice : DataService){}
 
 
 // *ngif directive: the ngif allows us to add/Remove Dom element
@@ -30,5 +34,11 @@ city ="pune"
   user:string="Admin";
 
   //ngStyle
+
+
+  getData (){
+    this.user = this.dataservice.userName;
+
+  }
 
 }
