@@ -1,5 +1,7 @@
 import { Interpolation } from '@angular/compiler';
 import { Component, HostBinding } from '@angular/core';
+import { DataService } from '../data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-databinding',
@@ -23,6 +25,7 @@ export class DatabindingComponent {
 ClickEventData:any;
 name = "jagruti...";
 city:any ="satara";
+constructor(private dataService : DataService , private router : Router){}
 
 
   isMatch =true;
@@ -31,5 +34,9 @@ city:any ="satara";
   }
   ClickEvent(){
   this.ClickEventData = 989898;
+  }
+  assignval(){
+    this.dataService.userName = "Ajay";
+    this.router.navigateByUrl("lifecycleHooks")
   }
 }

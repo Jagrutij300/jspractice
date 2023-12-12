@@ -10,6 +10,8 @@ import { DatabindingComponent } from './databinding/databinding.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
 import { LifeCyclehooksComponent } from './life-cyclehooks/life-cyclehooks.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { LifeCyclehooksComponent } from './life-cyclehooks/life-cyclehooks.compo
     DatabindingComponent,
     DirectivesComponent,
     LifeCyclehooksComponent,
+    ParentComponent,
+    ChildComponent,
    
     
   ],
