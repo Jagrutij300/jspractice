@@ -8,6 +8,9 @@ import { DirectivesComponent } from './directives/directives.component';
 import { LifeCyclehooksComponent } from './life-cyclehooks/life-cyclehooks.component';
 import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
+import { SubComponent } from './sub/sub.component';
+import { Sub1Component } from './sub1/sub1.component';
+import { Sub2Component } from './sub2/sub2.component';
 
 
 const routes: Routes = [
@@ -19,9 +22,9 @@ const routes: Routes = [
 {path : "LifeCyclehooksComponent", component : LifeCyclehooksComponent},
 {path : "ChildComponent", component : ChildComponent},
 {path : "ParentComponent", component : ParentComponent },
-
-
-
+{path : "SubComponent", component : SubComponent },
+{path : "Sub1Component", component : Sub1Component  },
+{path : "Sub2Component", component : Sub2Component },
 
 ];
 

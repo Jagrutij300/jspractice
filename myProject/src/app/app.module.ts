@@ -12,6 +12,9 @@ import { DirectivesComponent } from './directives/directives.component';
 import { LifeCyclehooksComponent } from './life-cyclehooks/life-cyclehooks.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { Sub1Component } from './sub1/sub1.component';
+import { SubComponent } from './sub/sub.component';
+import { Sub2Component } from './sub2/sub2.component';
 
 
 @NgModule({
@@ -26,6 +29,9 @@ import { ChildComponent } from './child/child.component';
     LifeCyclehooksComponent,
     ParentComponent,
     ChildComponent,
+    Sub1Component,
+    SubComponent,
+    Sub2Component,
    
     
   ],
