@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { DataService } from '../data.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { DataService } from '../data.service';
 })
 export class LifeCyclehooksComponent {
   Name:any;//normal prop
-  //@input() surName:any;//input property
+  @Input () surName:any;//input property
   constructor(private dataService : DataService ) {
     console.log("constructor calling...");
 

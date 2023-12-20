@@ -1,8 +1,13 @@
 <p>parent works!</p>
 <!-- parent and child componenet run at a same time bcz child componenet selectore here we used  -->
 <input type="text"[(ngModel)]="city">enter city
+<input type="text"[(ngModel)]="surName">enter surName
+<br>
 
 
 ---------------------------------------
 <app-child [cityName]="city"(data)="dataFromChild($event)"></app-child> 
+
+----------------------------------------
+<app-life-cyclehooks [surName]="surName"></app-life-cyclehooks>
 
