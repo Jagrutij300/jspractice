@@ -7,7 +7,7 @@ import { Subject } from 'rxjs';
 export class DataService {
   userName:any;
 
-data = new Subject();
+data = new Subject<any>();
 
 
 

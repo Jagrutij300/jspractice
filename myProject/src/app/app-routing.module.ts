@@ -22,9 +22,9 @@ const routes: Routes = [
 {path : "LifeCyclehooksComponent", component : LifeCyclehooksComponent},
 {path : "ChildComponent", component : ChildComponent},
 {path : "ParentComponent", component : ParentComponent },
-{path : "SubComponent", component : SubComponent },
-{path : "Sub1Component", component : Sub1Component  },
-{path : "Sub2Component", component : Sub2Component },
+{path : "Subject", component : SubComponent },
+{path : "Subject1", component : Sub1Component  },
+{path : "Subject2", component : Sub2Component },
 
 ];
 

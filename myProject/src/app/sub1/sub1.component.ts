@@ -14,7 +14,11 @@ export class Sub1Component {
     this.dataService.data.subscribe(data=>{
       this.data1 = data;
     })
+    console.log("this.data1",this.data1);
   }
-   }
 
 
+  getData(){
+    console.log("this.data1",this.data1);
+  }
+}
