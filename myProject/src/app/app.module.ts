@@ -15,6 +15,7 @@ import { ChildComponent } from './child/child.component';
 import { Sub1Component } from './sub1/sub1.component';
 import { SubComponent } from './sub/sub.component';
 import { Sub2Component } from './sub2/sub2.component';
+import { SearchPipe } from './search.pipe';
 
 
 @NgModule({
@@ -32,6 +33,8 @@ import { Sub2Component } from './sub2/sub2.component';
     Sub1Component,
     SubComponent,
     Sub2Component,
+    SearchPipe,
+  
    
     
   ],

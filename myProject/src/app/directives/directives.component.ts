@@ -20,8 +20,18 @@ city ="pune"
   //*ngFor any element portion repeat again and again sho won dom so we used *ngFor
   cars = ["i10","i20","swift","maruti"];
   showDiv = true;
-
-  // toggle show on click hide and on click again show on dom
+  tableHeading = ["Name","Contact","City","age"];
+  tableData = [
+    {name:"pooja", contact:56678999 , city:"pune" , age:20},
+    {name:"om", contact:56678999 , city:"satara" , age:20},
+    {name:"sahil", contact:56678999 , city:"mumbai" , age:20},
+    {name:"navaj", contact:56678999 , city:"roha" , age:20},
+    {name:"pawan", contact:56678999 , city:"kolad" , age:20},
+    {name:"pranav", contact:56678999 , city:"jalgaoan" , age:20},
+    {name:"pranay", contact:56678999 , city:"damkhadi" , age:20},
+    {name:"gaurav", contact:56678999 , city:"pali" , age:20},
+    {name:"sayali", contact:56678999 , city:"vave" , age:20},
+    {name:"shraddha", contact:56678999 , city:"pen" , age:20},]
   toggle(){
     //this.showDiv="false";
     this.showDiv = !this.showDiv; //!T >>F if>>t

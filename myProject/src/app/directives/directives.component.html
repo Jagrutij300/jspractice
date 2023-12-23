@@ -1,4 +1,4 @@
-<p>directives works!</p>
+<!-- <p>directives works!</p>
 
 <div *ngIf="isShow"> 
     <p>{{city}}</p>
@@ -13,38 +13,54 @@
 <br>
 <button (click) = "toggle()">toggle</button>
 
-<!-- *ngswitch -->
-<div [ngSwitch]="fruits">
+<!- *ngswitch -->
+<!-- <div [ngSwitch]="fruits">
     <div *ngSwitchCase="'mango'">my fav fruit is mango</div>
     <div *ngSwitchCase="'pinapple'">my fav fruit is pinapple</div>
     <div *ngSwitchCase="'papapya'">my fav fruit is papapya</div>
     
 </div> 
 
-<!-- *ngClass -->
+*ngClass
 <div class = 'info adminUser'>
-    i like pune
-</div>
+    i like pune -->
+<!-- </div> -->
 
 <!-- <div [ngClass] = "{'adminUser' : user == 'Admin','mentorUser' : user == 'Mentor','studentUser : user == 'student' }" > -->
   <!-- welcome to app -->
 <!-- </div>> --> 
 
-<div [class.adminUser]="user == 'Admin'"
+<!-- <div [class.adminUser]="user == 'Admin'"
     [class.mentorUser]="user == 'Mentor'"
     [class.studentUser]="user == 'Student'"
 >
     Welcome
-</div>
+</div> -->
 
-<!-- ngStyle -->
+<!-- ngStyle
 <div style="color: blueviolet" >
     Welcome
-</div>
+</div> -->
 
-<div [ngStyle] = "user =='Admin' ? {'background-color':'yellow'} : {'background-color': 'black'}">
+<!-- <div [ngStyle] = "user =='Admin' ? {'background-color':'yellow'} : {'background-color': 'black'}">
     Welcome
 
 </div>
 
-<button (click)="getData()">get Data</button>
+<button (click)="getData()">get Data</button> --> 
+<div class="table-cont">
+    <h1>Table</h1>
+    <table class="table-cont">
+        <tr>
+            <th *ngFor = " let headings of tableHeading">{{headings}}</th>
+            <th></th>
+        </tr>
+        <tr *ngFor = "let data of tableData">
+            <td>{{data.name}}</td>
+            <td>{{data.contact}}</td>
+            <td>{{data.city}}</td>
+            <td>{{data.age}}</td>
+
+        </tr>
+    </table>
+</div>
