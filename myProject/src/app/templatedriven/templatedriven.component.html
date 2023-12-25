@@ -1,0 +1,30 @@
+<div>
+    <form class="form-container" #loginForm = "ngForm" autocomplete="off">
+        <h2>login form</h2>
+        <div>
+        <label>User Name</label><br>
+        <input type="text"  ngModel #userName="ngModel" name="userName" id="" required maxlength="5"><br>
+        <span *ngIf="userName?.errors?.['required'] && userName.touched" class="error">user name is required</span>
+        </div>
+        
+        <div>
+            <label>password</label><br>
+            <input type="text" #password="ngModel" ngModel name="password" id="" required pattern="^(?=.*[a-za-z])(?=.*\d)[A-Za-z\d]{6,12}$"><br>
+            <span *ngIf="password.errors?.['required'] && password.touched" class="error">password is required</span>
+            <span class="error" *ngIf="password.errors?.['pattern']">pattern not match</span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div>
+            <button (click)="Submit(loginForm.value)" [disabled]="!loginForm.valid">Submit</button>
+        </div>
+        
+        <div>
+            Not an Account? create Account
+        </div>
+        
+        
+    </form>
+</div>

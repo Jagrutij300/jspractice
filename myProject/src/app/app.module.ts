@@ -16,6 +16,7 @@ import { Sub1Component } from './sub1/sub1.component';
 import { SubComponent } from './sub/sub.component';
 import { Sub2Component } from './sub2/sub2.component';
 import { SearchPipe } from './search.pipe';
+import { TemplatedrivenComponent } from './templatedriven/templatedriven.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { SearchPipe } from './search.pipe';
     SubComponent,
     Sub2Component,
     SearchPipe,
+    TemplatedrivenComponent,
   
    
     

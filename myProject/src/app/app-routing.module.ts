@@ -11,6 +11,7 @@ import { ParentComponent } from './parent/parent.component';
 import { SubComponent } from './sub/sub.component';
 import { Sub1Component } from './sub1/sub1.component';
 import { Sub2Component } from './sub2/sub2.component';
+import { TemplatedrivenComponent } from './templatedriven/templatedriven.component';
 
 
 const routes: Routes = [
@@ -24,7 +25,8 @@ const routes: Routes = [
 {path : "ParentComponent", component : ParentComponent },
 {path : "Subject", component : SubComponent },
 {path : "Subject1", component : Sub1Component  },
-{path : "Subject2", component : Sub2Component },
+{path : "Subject2", component : Sub2Component  },
+{path : "TemplatedrivenComponent", component : TemplatedrivenComponent  },
 
 ];
 
