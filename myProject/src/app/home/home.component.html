@@ -3,12 +3,18 @@
         <button routerLink="/login" class='btn'>Login</button>
         <button (click)="SignUpCompo()">sign Up</button>
         <button routerLink="/databinding" class='btn'>data Bindinng</button>
-        <button (click)="directives()" class='btn'>directives</button>
+        <button (click)="directives()" class='btn'>pipes</button>
         <button (click)="LifeCyclehooksComponent ()">LifeCyclehooksComponent </button>
         <button routerLink="/ParentComponent" class='btn'>ParentComponent</button>
         <button routerLink="/ChildComponent" class='btn'>ChildComponent</button>
         <button routerLink="Subject" class='btn'>Subject</button>
         <button routerLink="Subject1" class='btn'>Subject1</button>
         <button routerLink="Subject2" class='btn'>Subject2</button>
+        <button (click)="purepipe()">pure pipe</button>
+    </div>
+    <br><br><br>
+    <div *ngIf="pipe"> 
+        {{Name | titlecase}}
+        {{date | date:'medium' }}
     </div>
 </div>

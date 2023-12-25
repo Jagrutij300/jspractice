@@ -12,9 +12,11 @@ export class HomeComponent { // componenet class : property ,constructor, life c
        //let/or/const city = "pune" var declaration in js
        city : string = "pune"; //property
        sName : any = 989898; // any means any thing number string or anything
-      Name : string = "jagruti";
+      Name : string = "jagruti jadhav";
       Name2! : string; //only declare
-      Name3 : any; // any not need to ! declare
+      Name3 : any; // any not need to ! declare 
+      pipe : boolean=false;
+      date: "10/02/2023" = "10/02/2023";
 
   
 
@@ -43,6 +45,8 @@ export class HomeComponent { // componenet class : property ,constructor, life c
      LifeCyclehooksComponent(){
       this.router.navigateByUrl('LifeCyclehooksComponent')
      }
-    
+    purepipe(){
+      this.pipe=true;
+    }
 
 }
