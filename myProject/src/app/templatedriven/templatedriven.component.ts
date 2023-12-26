@@ -11,4 +11,7 @@ export class TemplatedrivenComponent {
     console.log("form obj",form);
     
   }
-}
+ 
+    
+  }
+

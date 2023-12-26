@@ -12,6 +12,7 @@ import { SubComponent } from './sub/sub.component';
 import { Sub1Component } from './sub1/sub1.component';
 import { Sub2Component } from './sub2/sub2.component';
 import { TemplatedrivenComponent } from './templatedriven/templatedriven.component';
+import { SignUpReactiveFormComponent } from './sign-up-reactive-form/sign-up-reactive-form.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,7 @@ const routes: Routes = [
 {path : "Subject1", component : Sub1Component  },
 {path : "Subject2", component : Sub2Component  },
 {path : "TemplatedrivenComponent", component : TemplatedrivenComponent  },
+{path : "signUpForm", component : SignUpReactiveFormComponent },
 
 ];
 
