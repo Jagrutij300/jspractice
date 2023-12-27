@@ -16,8 +16,8 @@ export class SignUpReactiveFormComponent {
   formLoad(){
     this.signUpForm = this.formBuilder.group({
       Name : ['',[Validators.required]],
-      Mobile : [''],
-      Pancard: [''],
+      Mobile : ['',[Validators.maxLength(10)]],
+      Pancard: ['',[Validators.pattern("^[A-Z]{5}[0-9]{4}[A-Z]{1}$"),Validators.maxLength(10)]],
       Email : [''],
       Password : [''],
       ConfirmPassword : [''],
