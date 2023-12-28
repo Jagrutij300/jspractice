@@ -2,15 +2,21 @@
     <form [formGroup]="signUpForm">
         <label>Name</label><br>
         <input type="text" formControlName="Name"><br>
-        <span class="error" *ngIf="signUpForm.get('Name')?.hasError('required') && signUpForm.get('Name')?.touched">Name is required</span><br>
+        <span class="error" *ngIf="signUpForm.get('Name')?.hasError('required') && signUpForm.get('Name')?.touched">Name
+            is required</span><br>
         <label>Mob No</label><br>
         <input type="text" formControlName="Mobile"><br>
-        <span class="error" *ngIf="signUpForm.get('Mobile')?.hasError('maxlength(10)')">Maximum 10 number are allowed </span><br>
+        <span class="error" *ngIf="signUpForm.get('Mobile')?.hasError('maxlength')">Maximum 10 number are allowed
+        </span><br>
 
         <label>Pancard No</label><br>
         <input type="text" formControlName="Pancard "><br>
-        <span class="error" *ngIf="signUpForm.get('Pancard')?.hasError('pattern') && !signUpForm.get('Pancard')?.hasError('maxlength')"> invalid Pan number</span><br>
-        <span class="error" *ngIf="signUpForm.get('Pancard')?.hasError('maxlength') && !signUpForm.get('Pancard')?.hasError('pattern')"> maxlength required 10 number</span><br>
+        <span class="error"
+            *ngIf="signUpForm.get('Pancard')?.hasError('pattern') && !signUpForm.get('Pancard')?.hasError('maxlength')">
+            invalid Pan number</span><br>
+        <span class="error"
+            *ngIf="signUpForm.get('Pancard')?.hasError('maxlength') && !signUpForm.get('Pancard')?.hasError('pattern')">
+            maxlength required 10 number</span><br>
 
         <label>Email</label><br>
         <input type="text" formControlName="Email"><br>
@@ -18,7 +24,7 @@
         <input type="text" formControlName="Password"><br>
         <label>Confirm Password</label><br>
         <input type="text" formControlName="ConfirmPassword"><br>
-        <button (click="Submit()")>Submit</button>
+        <button (click="Submit()" )>Submit</button>
 
     </form>
 </div>
