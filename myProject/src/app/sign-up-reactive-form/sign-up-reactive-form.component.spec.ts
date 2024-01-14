@@ -16,6 +16,10 @@ describe('SignUpReactiveFormComponent', () => {
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(component).toBeTruthy(true);
   });
 });
+function expect(component: SignUpReactiveFormComponent) {
+  throw new Error('Function not implemented.');
+}
+

@@ -10,8 +10,9 @@
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
+        "serve": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:dev-serve",
           "options": {
             "outputPath": "dist/my-project",
             "index": "src/index.html",
@@ -25,10 +26,15 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
-          },
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
+          }
+        }
+      },
           "configurations": {
             "production": {
               "budgets": [
@@ -87,15 +93,19 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           }
         }
       }
-    }
-  },
+    },
   "cli": {
     "analytics": false
   }
 }
+
+

@@ -19,15 +19,20 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+   "paths": {
+   "tslib" : ["path/to/node_modules/tslib/tslib.d.ts"]},
     "lib": [
       "ES2022",
       "dom"
-    ]
-  },
+    ],
+  
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
-  }
-}
+    "strictTemplates": true,}
+  
+
+ 

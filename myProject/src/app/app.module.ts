@@ -38,7 +38,9 @@ import { SignUpReactiveFormComponent } from './sign-up-reactive-form/sign-up-rea
     SearchPipe,
     TemplatedrivenComponent,
     SignUpReactiveFormComponent,
-  
+    FormsModule,
+    ReactiveFormsModule,
+    //other modules
    
     
   ],
